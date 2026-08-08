@@ -34,3 +34,29 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+
+/* =========================
+   Header / Navigation
+========================= */
+
+.navbar {
+  background-color: var(--color-light);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-accent);
+}
