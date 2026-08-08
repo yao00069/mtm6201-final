@@ -1,0 +1,36 @@
+:root {
+  /* Bootstrap color overrides */
+  --bs-primary: #4e7c4a;
+  --bs-primary-rgb: 78, 124, 74;
+
+  --bs-secondary: #8fbd78;
+  --bs-secondary-rgb: 143, 189, 120;
+
+  --bs-body-bg: #f7f3ed;
+  --bs-body-color: #2c2c2c;
+
+  /* Plant Palette colors */
+  --color-accent: #d97a4a;
+  --color-highlight: #f2c14e;
+  --color-dark: #2c2c2c;
+  --color-light: #f7f3ed;
+
+  /* Typography */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
