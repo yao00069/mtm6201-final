@@ -13,7 +13,7 @@
   --color-accent: #d97a4a;
   --color-highlight: #f2c14e;
   --color-dark: #2c2c2c;
-  --color-black:#000;
+  --color-black: #000;
   --color-light: #f7f3ed;
 
   /* Typography */
@@ -34,6 +34,23 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 /* =========================
@@ -63,7 +80,7 @@ h6 {
 }
 
 /* =========================
-   Hero
+   Hero Section
 ========================= */
 
 .hero {
@@ -192,7 +209,7 @@ h6 {
 }
 
 /* =========================
-   Healthy Ingredients
+   Healthy Ingredients Section
 ========================= */
 
 .healthy-ingredients {
@@ -200,13 +217,7 @@ h6 {
   background-color: var(--color-light);
 }
 
-.healthy-ingredients h2 {
-  color: var(--color-accent);
-  font-size: 1.5rem;
-}
-
 .ingredients-intro {
-  font-size: 0.82rem;
   line-height: 1.6;
 }
 
@@ -220,7 +231,6 @@ h6 {
 
 .ingredients-list {
   color: var(--bs-primary);
-  font-size: 0.72rem;
   font-weight: 600;
 }
 
@@ -261,20 +271,11 @@ h6 {
   }
 
   .healthy-ingredients h2 {
-    font-size: 1.5rem;
     white-space: nowrap;
-  }
-
-  .ingredients-intro {
-    font-size: 1rem;
   }
 
   .ingredients-image {
     width: 100%;
-  }
-
-  .ingredients-list {
-    font-size: 1rem;
   }
 }
 
@@ -290,17 +291,69 @@ h6 {
     --bs-gutter-x: 5rem;
   }
 
-  .healthy-ingredients h2 {
-    font-size: 2rem;
-  }
-
-  .ingredients-intro {
-    font-size: 1rem;
-  }
-
   .ingredients-image {
     width: 90%;
     margin-left: auto;
     margin-right: 0;
+  }
+}
+/* =========================
+   Innovative Cuisine Section
+========================= */
+
+.innovative-cuisine {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-black);
+  color: #fff;
+}
+
+.cuisine-intro {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.cuisine-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cuisine-card p {
+  line-height: 1.6;
+}
+
+/* Tablet 768px - 1199px */
+
+@media (min-width: 768px) {
+
+  .innovative-cuisine {
+    padding: 4rem 2rem;
+  }
+ 
+  .cuisine-intro {
+    max-width: 650px;
+  }
+
+  .innovative-cuisine .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2.5rem;
+  }
+}
+
+/* Desktop 1200px */
+
+@media (min-width: 1200px) {
+
+  .innovative-cuisine {
+    padding: 5rem 0;
+  }
+
+  .cuisine-intro {
+    max-width: 900px;
+  }
+
+  .innovative-cuisine .row {
+    --bs-gutter-x: 2rem;
   }
 }
