@@ -43,9 +43,9 @@ h6 {
   background-color: var(--color-light);
 }
 
-.navbar-brand {
-  font-family: var(--font-heading);
-  color: var(--color-dark);
+.navbar-brand img {
+  width: 147px;
+  height: auto;
 }
 
 .nav-link {
