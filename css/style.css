@@ -12,7 +12,7 @@
   /* Plant Palette colors */
   --color-accent: #d97a4a;
   --color-highlight: #f2c14e;
-  --color-dark: #2c2c2c;
+  --color-dark: #000;
   --color-light: #f7f3ed;
 
   /* Typography */
@@ -59,4 +59,133 @@ h6 {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--color-accent);
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  width: 84%;
+  max-width: 380px;
+  padding: 2rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: var(--color-light);
+  border-radius: 20px;
+}
+
+.hero-content h1 {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+
+.hero-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 1.25rem;
+  background-color: var(--color-accent);
+}
+
+.hero-content p {
+  margin-bottom: 1.8rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--button-color);
+  --bs-btn-border-color: var(--button-color);
+
+  --bs-btn-hover-color: var(--button-color);
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: var(--button-color);
+
+  --bs-btn-active-color: var(--button-color);
+  --bs-btn-active-bg: var(--color-dark);
+  --bs-btn-active-border-color: var(--button-color);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Book a Table */
+.btn-accent {
+  --button-color: var(--color-accent);
+}
+
+/* View Menu */
+.btn-primary {
+  --button-color: var(--bs-primary);
+}
+
+/* Keyboard Focus */
+.btn:focus-visible {
+  color: var(--button-color);
+  background-color: var(--color-dark);
+  border-color: var(--button-color);
+  box-shadow: none;
+  outline: 2px solid var(--button-color);
+  outline-offset: 3px;
+}
+.hero-content .btn {
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+
+  .hero-content {
+    width: auto;
+    max-width: 480px;
+    padding: 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.25rem, 3.5vw, 3rem);
+  }
+
+  .hero-content .btn {
+    width: 170px;
+  }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+  .hero-content {
+    max-width: 520px;
+    padding: 4rem;
+  }
 }
