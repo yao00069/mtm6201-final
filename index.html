@@ -6,24 +6,22 @@
 
     <title>Plant Palette | Home</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    
+     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container">
@@ -40,7 +38,8 @@
                     aria-controls="main-nav"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
-            >       <span class="navbar-toggler-icon"></span>
+                >
+                   <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="main-nav">
@@ -76,6 +75,8 @@
     </header>
 
     <main id="main-content">
+
+         <!-- Hero -->
         <section class="hero">
             <img
                 class="hero-image"
@@ -89,12 +90,11 @@
                 alt="Plant-based bowl with quinoa, chickpeas, vegetables, and avocado"
             >
                 
-            <div class="container d-flex justify-content-center justify-content-sm-start">
+            <div class="container d-flex justify-content-center justify-content-md-start">
                 <div class="hero-content">
                     <h1>Healthy Gatherings for Modern Living</h1>
                     <div class="hero-divider"></div>
-                    <p>Fresh, locally sourced plant-based cuisine crafted with creativity, flavour, and sustainability.
-                    </p>
+                    <p>Fresh, locally sourced plant-based cuisine crafted with creativity, flavour, and sustainability.</p>
 
                     <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-md-start">
                         <a class="btn btn-accent" href="reservation.html">
@@ -108,6 +108,91 @@
                 </div>
             </div>
         </section>
+
+        <!-- Healthy Ingredients -->
+        <section class="healthy-ingredients">
+            <div class="container">
+
+                <div class="d-md-none ingredients-mobile-intro">
+                    <h2 class="text-uppercase text-center mb-4">
+                        Healthy Ingredients
+                    </h2>
+
+                    <p class="ingredients-intro mb-4">
+                        We use fresh, locally sourced, seasonal ingredients that
+                        are good for you, our community and the planet.
+                    </p>
+                </div>
+
+                <div class="row align-items-center g-3 g-md-3 g-xl-5">
+
+                    <div class="col-12 col-md-7 col-xl-6">
+                        <img
+                            class="img-fluid rounded-4 ingredients-image"
+                            src="images/ingredients-1200.webp"
+                            srcset="
+                                images/ingredients-640.webp 640w,
+                                images/ingredients-1200.webp 1200w,
+                                images/ingredients-1920.webp 1920w
+                            "
+                            sizes="(min-width: 1200px) 40vw,
+                                   (min-width: 768px) 58vw,
+                                   100vw"
+                            alt="Plant-based bowl with chickpeas, vegetables, olives, and greens"
+                        >
+                    </div>
+
+                    <div class="col-12 col-md-5 col-xl-6">
+
+                        <div class="d-none d-md-block">
+                            <h2 class="text-uppercase mb-3">
+                                Healthy Ingredients
+                            </h2>
+
+                            <p class="ingredients-intro mb-4">
+                                We use fresh, locally sourced, seasonal ingredients that
+                                are good for you, our community and the planet.
+                            </p>
+                        </div>
+
+                        <ul class="ingredients-list list-unstyled row text-center text-md-start mb-4">
+
+                            <li class="col-4 col-md-12 mb-md-3">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-1 gap-md-2">
+                                    <img src="images/leaf-icon.svg" alt="" width="25" height="25">
+                                    <span>Locally Sourced</span>
+                                </div>
+                            </li>
+
+                            <li class="col-4 col-md-12 mb-md-3">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-1 gap-md-2">
+                                    <img src="images/leaf-icon.svg" alt="" width="25" height="25">
+                                    <span>Seasonal Produce</span>
+                                </div>
+                            </li>
+
+                            <li class="col-4 col-md-12">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-1 gap-md-2">
+                                    <img src="images/leaf-icon.svg" alt="" width="25" height="25">
+                                    <span>Nutrient Rich</span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <div class="text-center text-md-start">
+                            <a class="learn-more" href="about.html">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </main>
 
      <footer>
