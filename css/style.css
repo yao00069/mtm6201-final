@@ -219,9 +219,6 @@ h2 {
 .reservation-hero-content {
   max-width: 430px;
   min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* Tablet 768px - 1199px */
@@ -617,7 +614,7 @@ h2 {
 }
 
 .reservation-form-section textarea.form-control {
-  min-height: 140px;
+  min-height: 160px;
   resize: vertical;
 }
 
@@ -644,5 +641,79 @@ h2 {
 
   .reservation-form-section .btn {
     width: 180px;
+  }
+}
+
+/* =========================
+   How It Works Section
+========================= */
+
+.how-it-works {
+  padding: 4rem 1.5rem;
+  background-color: var(--bs-body-bg);
+}
+
+.how-step {
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 1.5rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.step-card {
+  min-height: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--bs-secondary-rgb), 0.4);
+  border-radius: 20px;
+}
+
+.step-icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 1.5rem;
+  object-fit: contain;
+}
+
+.how-step h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-accent);
+}
+
+.how-step p {
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .how-it-works {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .how-it-works {
+    padding: 6rem 0;
   }
 }

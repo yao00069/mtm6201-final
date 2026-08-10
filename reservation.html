@@ -80,167 +80,245 @@
         <section class="hero reservation-hero">
 
             <img
-        class="hero-image"
-        src="images/reservation-hero-1200.webp"
-        srcset="
-            images/reservation-hero-640.webp 640w,
-            images/reservation-hero-1200.webp 1200w,
-            images/reservation-hero-1920.webp 1920w
-        "
-        sizes="100vw"
-        alt="Interior dining area of Plant Palette restaurant"
-    >
+                class="hero-image"
+                src="images/reservation-hero-1200.webp"
+                srcset="
+                    images/reservation-hero-640.webp 640w,
+                    images/reservation-hero-1200.webp 1200w,
+                    images/reservation-hero-1920.webp 1920w
+                "
+                sizes="100vw"
+                alt="Interior dining area of Plant Palette restaurant"
+            >
 
-    <div class="container d-flex justify-content-center justify-content-md-start">
-        <div class="hero-content reservation-hero-content">
-            <h1>Reserve a Table</h1>
+            <div class="container d-flex justify-content-center justify-content-md-start">
+                <div class="hero-content reservation-hero-content d-flex flex-column justify-content-center">
+                    <h1>Reserve a Table</h1>
 
-            <p class="mb-0">
-                Enjoy a healthy and memorable plant-based dining experience.
-            </p>
-        </div>
-    </div>
+                    <p class="mb-0">
+                        Enjoy a healthy and memorable plant-based dining experience.
+                    </p>
+                </div>
+            </div>
 
-</section>
+        </section>
 
         <!-- Reservation Form Section -->
-<section class="reservation-form-section">
-    <div class="container">
+        <section class="reservation-form-section">
+            <div class="container">
 
-        <h2 class="text-uppercase text-center mb-5">
-            Reservation Form
-        </h2>
+                <h2 class="text-uppercase text-center mb-5">
+                    Reservation Form
+                </h2>
 
-        <form action="#" method="post">
+                <form action="#" method="post">
 
-            <div class="row gx-4 gy-4 g-md-5">
+                    <div class="row g-4 g-md-5">
 
-                <!-- Date -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-date" class="form-label">
-                        Date
-                    </label>
+                        <!-- Date -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-date" class="form-label">
+                                Date
+                            </label>
 
-                    <input
-                        type="date"
-                        class="form-control"
-                        id="reservation-date"
-                        name="reservation-date"
-                    >
-                </div>
+                            <input
+                                type="date"
+                                class="form-control"
+                                id="reservation-date"
+                                name="reservation-date"
+                            >
+                        </div>
 
-                <!-- Time -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-time" class="form-label">
-                        Time
-                    </label>
+                        <!-- Time -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-time" class="form-label">
+                                Time
+                            </label>
 
-                    <input
-                        type="time"
-                        class="form-control"
-                        id="reservation-time"
-                        name="reservation-time"
-                    >
-                </div>
+                            <input
+                                type="time"
+                                class="form-control"
+                                id="reservation-time"
+                                name="reservation-time"
+                            >
+                        </div>
 
-                <!-- Guests -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-guests" class="form-label">
-                        Number of Guests
-                    </label>
+                        <!-- Guests -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-guests" class="form-label">
+                                Number of Guests
+                            </label>
 
-                    <select
-                        class="form-select"
-                        id="reservation-guests"
-                        name="reservation-guests"
-                    >
-                        <option value="" selected>Select guests</option>
-                        <option value="1">1 Guest</option>
-                        <option value="2">2 Guests</option>
-                        <option value="3">3 Guests</option>
-                        <option value="4">4 Guests</option>
-                        <option value="5">5 Guests</option>
-                        <option value="6">6 Guests</option>
-                    </select>
-                </div>
+                            <select
+                                class="form-select"
+                                id="reservation-guests"
+                                name="reservation-guests"
+                            >
+                                <option value="" selected>Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                            </select>
+                        </div>
 
-                <!-- Name -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-name" class="form-label">
-                        Name
-                    </label>
+                        <!-- Name -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-name" class="form-label">
+                                Name
+                            </label>
 
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="reservation-name"
-                        name="reservation-name"
-                    >
-                </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="reservation-name"
+                                name="reservation-name"
+                            >
+                        </div>
 
-                <!-- Email -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-email" class="form-label">
-                        Email
-                    </label>
+                        <!-- Email -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-email" class="form-label">
+                                Email
+                            </label>
 
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="reservation-email"
-                        name="reservation-email"
-                    >
-                </div>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="reservation-email"
+                                name="reservation-email"
+                            >
+                        </div>
 
-                <!-- Phone -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <label for="reservation-phone" class="form-label">
-                        Phone Number
-                    </label>
+                        <!-- Phone -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <label for="reservation-phone" class="form-label">
+                                Phone Number
+                            </label>
 
-                    <input
-                        type="tel"
-                        class="form-control"
-                        id="reservation-phone"
-                        name="reservation-phone"
-                    >
-                </div>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="reservation-phone"
+                                name="reservation-phone"
+                            >
+                        </div>
 
-                <!-- Special Requests -->
-                <div class="col-12">
-                    <label for="reservation-requests" class="form-label">
-                        Special Requests (Optional)
-                    </label>
+                        <!-- Special Requests -->
+                        <div class="col-12">
+                            <label for="reservation-requests" class="form-label">
+                                Special Requests (Optional)
+                            </label>
 
-                    <textarea
-                        class="form-control"
-                        id="reservation-requests"
-                        name="reservation-requests"
-                        rows="4"
-                        placeholder="Let us know if you have any special requests or dietary needs."
-                    ></textarea>
+                            <textarea
+                                class="form-control"
+                                id="reservation-requests"
+                                name="reservation-requests"
+                                rows="4"
+                                placeholder="Let us know if you have any special requests or dietary needs."
+                            ></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-5">
+
+                        <button class="btn btn-accent" type="submit">
+                            Book a Table
+                        </button>
+
+                        <a class="btn btn-primary" href="#">
+                            View Menu
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+
+                <h2 class="text-uppercase text-center mb-5">
+                    How It Works
+                </h2>
+
+                <div class="row g-5 justify-content-center">
+
+                    <!-- Step 1 -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="how-step text-center h-100">
+
+                            <span class="step-number fs-5 fw-semibold">1</span>
+                            <div class="step-card">
+    
+                                <img
+                                    class="step-icon"
+                                    src="images/date-icon.svg"
+                                    alt=""
+                                >
+
+                                <h3>Choose Date and Time</h3>
+
+                                <p class="mb-0">
+                                   Pick your preferred date and time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="how-step text-center h-100">
+
+                            <span class="step-number fs-5 fw-semibold">2</span>
+                            <div class="step-card">  
+                                <img
+                                    class="step-icon"
+                                    src="images/user-icon.svg"
+                                    alt=""
+                                >
+
+                                <h3>Enter Details</h3>
+
+                                <p class="mb-0">
+                                    Provide your contact information.
+                                </p>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="how-step text-center h-100">
+
+                            <span class="step-number fs-5 fw-semibold">3</span>
+                            <div class="step-card">
+                                <img
+                                    class="step-icon"
+                                    src="images/confirmation-icon.svg"
+                                    alt=""
+                                >
+
+                                <h3>Receive Confirmation</h3>
+
+                                <p class="mb-0">
+                                    Get confirmation email with your booking details.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
-            <!-- Buttons -->
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-5">
-
-                <button class="btn btn-accent" type="submit">
-                    Book a Table
-                </button>
-
-                <a class="btn btn-primary" href="#">
-                    View Menu
-                </a>
-
-            </div>
-
-        </form>
-
-    </div>
-</section>
-
+        </section>
 
 
 
