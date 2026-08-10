@@ -84,7 +84,7 @@ h2 {
 }
 
 /* =========================
-   Hero Section
+   Home Hero Section
 ========================= */
 
 .hero {
@@ -209,6 +209,37 @@ h2 {
   .hero-content {
     max-width: 520px;
     padding: 4rem;
+  }
+}
+
+/* =========================
+   Reservation Hero
+========================= */
+
+.reservation-hero-content {
+  max-width: 430px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tablet 768px - 1199px */
+
+@media (min-width: 768px) {
+
+  .reservation-hero-content {
+    max-width: 500px;
+  }
+}
+
+/* Desktop 1200px+ */
+
+@media (min-width: 1200px) {
+
+  .reservation-hero-content {
+    max-width: 700px;
+    min-height: 300px;
   }
 }
 
