@@ -594,3 +594,55 @@ h2 {
     padding: 3.5rem 0;
   }
 }
+
+/* =========================
+   Reservation Form Section
+========================= */
+
+.reservation-form-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-black);
+  color: #fff;
+}
+
+.reservation-form-section .form-control,
+.reservation-form-section .form-select {
+  background-color: var(--color-light);
+  border: 0;
+}
+
+.reservation-form-section .form-label {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.reservation-form-section textarea.form-control {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.reservation-form-section .btn {
+  width: 170px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .reservation-form-section {
+    padding: 5rem 1.5rem;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+  .reservation-form-section {
+    padding: 6rem 0;
+  }
+
+  .reservation-form-section .btn {
+    width: 180px;
+  }
+}
