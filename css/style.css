@@ -422,3 +422,78 @@ h2 {
     margin-top: 1.5rem;
   }
 }
+
+/* =========================
+   CTA Section
+========================= */
+
+.cta-section {
+  padding: 4rem 1.5rem;
+
+  background-image:
+    linear-gradient(
+      rgba(247, 243, 237, 0.65),
+      rgba(247, 243, 237, 0.65)
+    ),
+    url("../images/wood-bg.webp");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-section h2 {
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.cta-divider {
+  width: 100%;
+  max-width: 520px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.cta-keywords {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.cta-intro {
+  color: var(--color-dark);
+}
+
+.cta-section .btn {
+  width: 170px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .cta-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-keywords {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+  .cta-section {
+    padding: 6rem 0;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section .btn {
+    width: 180px;
+  }
+}
