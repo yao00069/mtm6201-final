@@ -357,3 +357,68 @@ h2 {
     --bs-gutter-x: 2rem;
   }
 }
+
+/* =========================
+   Modern Dining Section
+========================= */
+
+.modern-dining {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-light);
+}
+
+.dining-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.dining-list {
+  width: fit-content;
+  margin-inline: auto;
+  color: var(--bs-primary);
+}
+
+/* Tablet 768px - 1199px */
+@media (min-width: 768px) {
+
+  .modern-dining {
+    padding: 4rem 1.5rem;
+  }
+
+  .modern-dining .row {
+    --bs-gutter-x: 2rem;
+  }
+
+  .modern-dining h2 {
+    white-space: nowrap;
+  }
+
+  .dining-list {
+    width: auto;
+    margin-inline: 0;
+  }
+}
+
+/* Desktop 1200px+ */
+@media (min-width: 1200px) {
+
+  .modern-dining {
+    padding: 5rem 0;
+  }
+
+  .modern-dining .row {
+    --bs-gutter-x: 4rem;
+  }
+
+  .dining-image {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .modern-dining .dining-list {
+    margin-top: 1.5rem;
+  }
+}
