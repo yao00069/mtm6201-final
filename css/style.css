@@ -67,7 +67,6 @@ h2 {
 }
 
 .nav-link {
-  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-dark);
@@ -77,6 +76,11 @@ h2 {
 .nav-link:hover,
 .nav-link:focus-visible {
   color: var(--color-accent);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 /* =========================
