@@ -474,8 +474,7 @@ h2 {
 }
 
 .cta-section h2 {
-  font-size: 1.05rem;
-  white-space: nowrap;
+  font-size: clamp(0.9rem, 4vw, 1.05rem);
 }
 
 .cta-divider {
@@ -487,7 +486,6 @@ h2 {
 
 .cta-keywords {
   font-size: 0.85rem;
-  white-space: nowrap;
 }
 
 .cta-intro {
