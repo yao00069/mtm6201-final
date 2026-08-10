@@ -67,6 +67,7 @@ h2 {
 }
 
 .nav-link {
+  width: fit-content;
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-dark);
