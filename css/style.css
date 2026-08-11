@@ -1,5 +1,4 @@
 :root {
-  /* Bootstrap color overrides */
   --bs-primary: #4e7c4a;
   --bs-primary-rgb: 78, 124, 74;
 
@@ -9,14 +8,12 @@
   --bs-body-bg: #f7f3ed;
   --bs-body-color: #2c2c2c;
 
-  /* Plant Palette colors */
   --color-accent: #d97a4a;
   --color-highlight: #f2c14e;
   --color-dark: #2c2c2c;
   --color-black: #000;
   --color-light: #f7f3ed;
 
-  /* Typography */
   --font-heading: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
 }
@@ -247,7 +244,7 @@ h2 {
 
 .about-hero-content {
   max-width: 420px;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .about-hero .hero-image {
@@ -268,7 +265,7 @@ h2 {
 @media (min-width: 1200px) {
 
   .about-hero-content {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 
