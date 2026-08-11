@@ -843,3 +843,54 @@ h2 {
     padding-left: 2rem;
   }
 }
+
+/* =========================
+   Our Team Section
+========================= */
+
+.our-team {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-black);
+  color: #fff;
+}
+
+.team-intro {
+  max-width: 650px;
+}
+
+.team-image {
+  width: 100%;
+  aspect-ratio: 3 / 3;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-member h3 {
+  color: var(--color-accent);
+}
+
+.our-team .btn {
+  width: 170px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .our-team {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .our-team {
+    padding: 6rem 0;
+  }
+
+  .our-team .btn {
+    width: 180px;
+  }
+}
