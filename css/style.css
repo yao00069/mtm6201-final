@@ -747,3 +747,51 @@ h2 {
     padding: 6rem 0;
   }
 }
+
+/* =========================
+   Our Story Section
+========================= */
+
+.our-story {
+  padding: 4rem 1.5rem;
+  background-color: var(--bs-body-bg);
+}
+
+.our-story-image {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .our-story {
+    padding: 4rem 1.5rem;
+  }
+
+  .our-story .row {
+    --bs-gutter-x: 3rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .our-story {
+    padding: 5rem 0;
+  }
+
+  .our-story .row {
+    --bs-gutter-x: 5rem;
+  }
+
+  .our-story-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
