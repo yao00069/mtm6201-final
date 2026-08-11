@@ -242,6 +242,37 @@ h2 {
 }
 
 /* =========================
+   About Hero
+========================= */
+
+.about-hero-content {
+  max-width: 420px;
+  min-height: 250px;
+}
+
+.about-hero .hero-image {
+  object-position: center 95%;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .about-hero-content {
+    max-width: 500px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .about-hero-content {
+    max-width: 700px;
+  }
+}
+
+/* =========================
    Healthy Ingredients Section
 ========================= */
 
