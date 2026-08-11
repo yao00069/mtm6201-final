@@ -795,3 +795,51 @@ h2 {
     margin-right: 0;
   }
 }
+
+/* =========================
+   Our Mission Section
+========================= */
+
+.our-mission {
+  padding: 4rem 1.5rem;
+
+  background-image:
+    linear-gradient(
+      rgba(247, 243, 237, 0.7),
+      rgba(247, 243, 237, 0.7)
+    ),
+    url("../images/mission-bg.webp");
+
+  background-repeat: repeat;
+  background-size: 400px auto;
+  background-position: center;
+}
+
+.mission-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .our-mission {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .our-mission {
+    padding: 6rem 0;
+  }
+
+  .mission-content {
+    padding-left: 2rem;
+  }
+}
